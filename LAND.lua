@@ -2580,6 +2580,8 @@ Text = [[
 𓂅 . [Files Channel .](https://t.me/LAND_DEV)
 
 [𓂅 .  Tumblr Channel](https://t.me/KASPEAR)
+
+[𓂅 .  LAND ID .](https://t.me/ID_LandTEAM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
