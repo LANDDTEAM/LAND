@@ -10398,7 +10398,7 @@ return false
 end
 local help_text = database:get(bot_id..'help_text')
 Text = [[
-*⌯اهلا انتツفي اوامر البوت⌯*
+*اهلا بك في اوامر البوت*
 ٴ≪━━━━━━━━━━━━━≫ٴ
 *⌯م1 ◂ اوامر الحمايه*
 *م2 ◂ اوامر تعطيل ~ تفعيل*
@@ -10409,9 +10409,8 @@ Text = [[
 *م7 ◂ اوامر التحشيش*
 *م8 ◂ اوامر مطور البوت*
 *م9 ◂ اوامر مطور الاساسي* 
-*⌯م10 ◂ اوامر الاعضاء*
+*م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━━━━━━━━≫ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM)  
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10466,7 +10465,6 @@ Text = [[
 ⌯┇ الجهات
 ⌯┇ الاشعارات
 •━━━━━━━━━━━━━•ٴ
-.[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10524,7 +10522,6 @@ Text = [[
 ⌯┇ نسبه الحب
 ⌯┇ ءall
  •━━━━━━━━━━━━━•ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10562,7 +10559,6 @@ Text = [[
 ⌯┇ وصف
 ⌯┇ تكرار + عدد
  •━━━━━━━━━━━━━•ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10611,7 +10607,6 @@ Text = [[
 ⌯┇ امر 
 ⌯┇ الاوامر المضافه
 •━━━━━━━━━━━━━━•ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10664,7 +10659,6 @@ Text = [[
 ⌯┇ تغير امر الاوامر
 ⌯┇ تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10733,7 +10727,6 @@ Text = [[
 ⌯┇ نسبه الكره
 ⌯┇ نسبه الانوثه
 •━━━━━━━━━━━━━•ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10792,7 +10785,6 @@ Text = [[
 ⌯┇ رفع + تنزيل ← الحاته
 ⌯┇ تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10826,7 +10818,6 @@ Text = [[
 ⌯┇ اذاعه 
 ⌯┇ ردود المطور 
  •━━━━━━━━━━━━━•ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10907,7 +10898,6 @@ Text = [[
 ⌯┇ تنظيف المشتركين
 ⌯┇ تنظيف الكروبات
 •━━━━━━━━━━━━━•ٴ
- .[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10941,7 +10931,6 @@ Text = [[
 ⌯┇ شنو رئيك بهاي بالرد
 ⌯┇ تحب هذا
 •━━━━━━━━━━━━━•ٴ
-.[قناة السوࢪس](t.me/LAND_TEAM) 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
