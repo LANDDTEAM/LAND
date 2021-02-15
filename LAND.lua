@@ -276,7 +276,7 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1124341247) then  
-var = 'مطور السورس 🥺💞'
+var = 'مالك اساسي '
 elseif tonumber(user_id) == tonumber(1313703081) then
 var = '𝖣𝖠𝖱𝖪'
 elseif tonumber(user_id) == tonumber(SUDO) then
@@ -472,7 +472,7 @@ end
 function Total_Msg(msgs)  
 local LAND_Msg = ''  
 if msgs < 100 then 
-LAND_Msg = 'سايق مخده 😹😹' 
+LAND_Msg = 'غير متفاعل  
 elseif msgs < 200 then 
 LAND_Msg = 'بده يتحسن' 
 elseif msgs < 400 then 
@@ -10411,6 +10411,7 @@ Text = [[
 *م9 ◂ اوامر مطور الاساسي* 
 *م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━━━━━━━━≫ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10465,6 +10466,7 @@ Text = [[
 ⌯┇ الجهات
 ⌯┇ الاشعارات
 •━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10522,6 +10524,7 @@ Text = [[
 ⌯┇ نسبه الحب
 ⌯┇ ءall
  •━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10559,6 +10562,7 @@ Text = [[
 ⌯┇ وصف
 ⌯┇ تكرار + عدد
  •━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10607,6 +10611,7 @@ Text = [[
 ⌯┇ امر 
 ⌯┇ الاوامر المضافه
 •━━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10659,6 +10664,7 @@ Text = [[
 ⌯┇ تغير امر الاوامر
 ⌯┇ تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10727,6 +10733,7 @@ Text = [[
 ⌯┇ نسبه الكره
 ⌯┇ نسبه الانوثه
 •━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10785,6 +10792,7 @@ Text = [[
 ⌯┇ رفع + تنزيل ← الحاته
 ⌯┇ تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10818,6 +10826,7 @@ Text = [[
 ⌯┇ اذاعه 
 ⌯┇ ردود المطور 
  •━━━━━━━━━━━━━•ٴ
+ [ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10898,6 +10907,7 @@ Text = [[
 ⌯┇ تنظيف المشتركين
 ⌯┇ تنظيف الكروبات
 •━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10931,6 +10941,7 @@ Text = [[
 ⌯┇ شنو رئيك بهاي بالرد
 ⌯┇ تحب هذا
 •━━━━━━━━━━━━━•ٴ
+[ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
