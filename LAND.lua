@@ -10664,7 +10664,8 @@ Text = [[
 ⌯┇ تغير امر الاوامر
 ⌯┇ تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
-[🦁┇𝘓𝘈𝘕𝘋](t.me/LAND_TEAM)
+ ‏‎‏💭│رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
+end
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10733,7 +10734,8 @@ Text = [[
 ⌯┇ نسبه الكره
 ⌯┇ نسبه الانوثه
 •━━━━━━━━━━━━━•ٴ
-[🦁┇𝘓𝘈𝘕𝘋](t.me/LAND_TEAM)
+ ‏‎‏💭│رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
+end
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10792,7 +10794,8 @@ Text = [[
 ⌯┇ رفع + تنزيل ← الحاته
 ⌯┇ تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
-[🦁┇𝘓𝘈𝘕𝘋](t.me/LAND_TEAM)
+ ‏‎‏💭│رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
+end
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10826,7 +10829,8 @@ Text = [[
 ⌯┇ اذاعه 
 ⌯┇ ردود المطور 
  •━━━━━━━━━━━━━•ٴ
-[🦁┇𝘓𝘈𝘕𝘋](t.me/LAND_TEAM)
+ ‏‎‏💭│رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
+end)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10906,8 +10910,8 @@ Text = [[
 ⌯┇ تفعيل/تعطيل المغادره
 ⌯┇ تنظيف المشتركين
 ⌯┇ تنظيف الكروبات
-•━━━━━━━━━━━━━•ٴ
-[🦁┇𝘓𝘈𝘕𝘋](t.me/LAND_TEAM)
+ ‏‎‏💭│رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
+end
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10941,7 +10945,8 @@ Text = [[
 ⌯┇ شنو رئيك بهاي بالرد
 ⌯┇ تحب هذا
 •━━━━━━━━━━━━━•ٴ
-[🦁┇𝘓𝘈𝘕𝘋](t.me/LAND_TEAM)
+ ‏‎‏💭│رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
+end
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
