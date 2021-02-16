@@ -1040,12 +1040,12 @@ end
 if text == 'تحديث السورس ⌯' and DevLANDW(msg) then 
 os.execute('rm -rf LAND.lua')
 os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua')
-send(msg.chat_id_, msg.id_,' ⌯┇ تم تحديث السورس \n ⌯┇ لديك اخر اصدار لسورس لاند\n ⌯┇ الاصدار » { 1.2v}')
+send(msg.chat_id_, msg.id_,' ⌯┇ تم تحديث السورس \n ⌯┇ لديك اخر اصدار لسورس لاند\n ⌯┇ الاصدار » { 1.3v}')
 dofile('LAND.lua')  
 end
 if text == 'الاصدار ⌯' and DevLANDW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ⌯┇ اصدار سورس لاند \n ⌯┇ الاصدار »{ 1.2v}')
+send(msg.chat_id_, msg.id_,' ⌯┇ اصدار سورس لاند \n ⌯┇ الاصدار »{ 1.3v}')
 end
 if text == 'قناه تحديثات البوت ⌯' and DevLANDW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2291,7 +2291,7 @@ return false
 end
 os.execute('rm -rf LAND.lua')
 os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua')
-send(msg.chat_id_, msg.id_,' ⌯┇ تم تحديث السورس \n ⌯┇ لديك اخر اصدار لسورس لاند\n ⌯┇ الاصدار » { 1.2v}')
+send(msg.chat_id_, msg.id_,' ⌯┇ تم تحديث السورس \n ⌯┇ لديك اخر اصدار لسورس لاند\n ⌯┇ الاصدار » { 1.3v}')
 dofile('LAND.lua')  
 end
 
@@ -2575,13 +2575,13 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 Text = [[
 𓂅 . LAND TEAM 
 ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••
-[𓂅 . Source Channel .](https://t.me/LAND_TEAM)
+[𓂅 . Source Channel .](http://t.me/LAND_TEAM)
 
-[𓂅 . Files Channel .](https://t.me/LAND_DEV)
+[𓂅 . Files Channel .](http://t.me/LAND_dev)
 
-[𓂅 .  Tumblr Channel](https://t.me/KASPEAR)
+[𓂅 .  Tumblr Channel  .](http://t.me/Kaspear)
 
-[𓂅 .  LAND ID .](https://t.me/ID_LandTEAM)
+[𓂅 .  LAND ID . ](http://t.me/ID_LandTEAM)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8630,7 +8630,7 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'لاند').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'لاند')
 local LAND_Msg = {
-'عمغي 🥺💕.',
+'اني بوت لا مو بوت 🥺💞.',
 'هاا شتريد كافي ☹️.',
 'مشايف بوت شني 😂.',
 'كول حبيبي ؟ اني '..Namebot..'',
@@ -10398,7 +10398,7 @@ return false
 end
 local help_text = database:get(bot_id..'help_text')
 Text = [[
-*اهلا بك في اوامر البوت*
+*اهلا بك في اوامر البوت *
 ٴ≪━━━━━━━━━━━━━≫ٴ
 *م1 ◂ اوامر الحمايه*
 *م2 ◂ اوامر تعطيل ~ تفعيل*
@@ -10411,9 +10411,7 @@ Text = [[
 *م9 ◂ اوامر مطور الاساسي* 
 *م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━━━━━━━━≫ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10468,8 +10466,7 @@ Text = [[
 ⌯┇ الجهات
 ⌯┇ الاشعارات
 •━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10527,8 +10524,7 @@ Text = [[
 ⌯┇ نسبه الحب
 ⌯┇ ءall
  •━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10566,8 +10562,7 @@ Text = [[
 ⌯┇ وصف
 ⌯┇ تكرار + عدد
  •━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10616,8 +10611,7 @@ Text = [[
 ⌯┇ امر 
 ⌯┇ الاوامر المضافه
 •━━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10670,8 +10664,7 @@ Text = [[
 ⌯┇ تغير امر الاوامر
 ⌯┇ تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10740,8 +10733,7 @@ Text = [[
 ⌯┇ نسبه الكره
 ⌯┇ نسبه الانوثه
 •━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10800,8 +10792,7 @@ Text = [[
 ⌯┇ رفع + تنزيل ← الحاته
 ⌯┇ تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10835,8 +10826,7 @@ Text = [[
 ⌯┇ اذاعه 
 ⌯┇ ردود المطور 
  •━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10916,8 +10906,8 @@ Text = [[
 ⌯┇ تفعيل/تعطيل المغادره
 ⌯┇ تنظيف المشتركين
 ⌯┇ تنظيف الكروبات
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+•━━━━━━━━━━━━━•ٴ
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10951,8 +10941,7 @@ Text = [[
 ⌯┇ شنو رئيك بهاي بالرد
 ⌯┇ تحب هذا
 •━━━━━━━━━━━━━•ٴ
-للاستفسار { ]]..SUDO_USER..[[ } ✓ ]]
-end
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -11540,7 +11529,7 @@ Text_Games = [[
  ⌯┇ لعبه الحزوره ~⪼لعبة التفكير 
  ⌯┇ لعبه المعاني ~⪼ العبه الشهيره 
 •━━━━━━━━━━━━━•ٴ
-[🦁┇𝘓𝘈𝘕𝘋](t.me/LAND_TEAM)
+[𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
 end
@@ -11716,7 +11705,7 @@ end
 
 if text == "شبيك" or text == "شبيج" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"كـلـشيي مـا بيــه🏃‍♂💘","مــا بـيه شـٰي??💘‌‎","بــيه اَنــته🤤💘" }
+local texting = {"كـلـشيي مـا بيــه🏃‍♂💘","مــا بـيه شـٰي🤷💘‌‎","بــيه اَنــته🤤💘" }
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
@@ -11766,7 +11755,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ⌯┇ٴ≪━━━━━━━━━━━━━≫ٴ⌯┇○ٴ\n⌯┇ 彡 .[━](t.me/LAND_TEAM)➢ ')
+send(msg.chat_id_, msg.id_, t..'ٴ⌯┇ٴ≪━━━━━━━━━━━━━≫ٴ⌯┇○ٴ\n⌯┇ [𝖢𝗁 𝖲𝗈𝗎𝗋𝖼e  .](http://t.me/LAND_TEAM) ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '⌯┇ تم تعطيل الابراج')
