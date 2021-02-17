@@ -2579,7 +2579,7 @@ Text = [[
 
 [𓂅 . Files Channel .](http://t.me/LAND_dev)
 
-[𓂅 .  Tumblr Channel  .](http://t.me/Kaspear)
+[𓂅 .  Tumblr Channel  .](http://t.me/YYY6J)
 
 [𓂅 .  LAND ID . ](http://t.me/ID_LandTEAM)
 ]]
