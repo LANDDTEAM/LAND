@@ -10411,7 +10411,7 @@ Text = [[
 *⌯ م9 ◂ اوامر مطور الاساسي* 
 *⌯ م10 ◂ اوامر الاعضاء*
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ Ch Source ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10466,7 +10466,7 @@ Text = [[
 ⌯┇ الجهات
 ⌯┇ الاشعارات
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10524,7 +10524,7 @@ Text = [[
 ⌯┇ نسبه الحب
 ⌯┇ ءall
  ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10562,7 +10562,7 @@ Text = [[
 ⌯┇ وصف
 ⌯┇ تكرار + عدد
  ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10611,7 +10611,7 @@ Text = [[
 ⌯┇ امر 
 ⌯┇ الاوامر المضافه
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10664,7 +10664,7 @@ Text = [[
 ⌯┇ تغير امر الاوامر
 ⌯┇ تغير امر م1 ~ الئ م10
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10733,7 +10733,7 @@ Text = [[
 ⌯┇ نسبه الكره
 ⌯┇ نسبه الانوثه
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10792,7 +10792,7 @@ Text = [[
 ⌯┇ رفع + تنزيل ← الحاته
 ⌯┇ تاك للحاتات
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10826,7 +10826,7 @@ Text = [[
 ⌯┇ اذاعه 
 ⌯┇ ردود المطور 
  ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10907,7 +10907,7 @@ Text = [[
 ⌯┇ تنظيف المشتركين
 ⌯┇ تنظيف الكروبات
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10941,7 +10941,7 @@ Text = [[
 ⌯┇ شنو رئيك بهاي بالرد
 ⌯┇ تحب هذا
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -11529,7 +11529,7 @@ Text_Games = [[
  ⌯┇ لعبه الحزوره ~⪼لعبة التفكير 
  ⌯┇ لعبه المعاني ~⪼ العبه الشهيره 
 ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ
-[Ch Source ](t.me/LAND_TEAM)
+[ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
 end
@@ -11755,7 +11755,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ⌯┇ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ⌯┇○ٴ\n⌯┇ [Ch Source ](t.me/LAND_TEAM)')
+send(msg.chat_id_, msg.id_, t..'ٴ⌯┇ٴ≪┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉≫ٴ⌯┇○ٴ\n⌯┇ [ٴ≪ ٴ≪ Ch Source ≫ٴ ≫ٴ ](t.me/LAND_TEAM)')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '⌯┇ تم تعطيل الابراج')
