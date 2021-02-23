@@ -1040,7 +1040,7 @@ end
 if text == 'تحديث السورس ⌔' and DevLANDW(msg) then 
 os.execute('rm -rf LAND.lua')
 os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua')
-send(msg.chat_id_, msg.id_,' ⌔┆  تم تحديث السورس \n ⌔┆  لديك اخر اصدار لسورس لاند\n ⌔┆  الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ⌔ تم تحديث آلسـورس \n لآخـر آصـدار وتم تنزيل آلتـحديثات آلجـديده... \nقناة آلسـورس @LAND_TEAM')
 dofile('LAND.lua')  
 end
 if text == 'الاصدار ⌔' and DevLANDW(msg) then 
@@ -2291,7 +2291,7 @@ return false
 end
 os.execute('rm -rf LAND.lua')
 os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua')
-send(msg.chat_id_, msg.id_,' ⌔┆  تم تحديث السورس \n ⌔┆  لديك اخر اصدار لسورس لاند\n ⌔┆  الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ⌔ تم تحديث آلسـورس \n لآخـر آصـدار وتم تنزيل آلتـحديثات آلجـديده... \nقناة آلسـورس @LAND_TEAM')
 dofile('LAND.lua')  
 end
 
