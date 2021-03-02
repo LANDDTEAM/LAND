@@ -2573,15 +2573,17 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 Text = [[
-𓂅 . LAND TEAM 
-••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••
-[𓂅 . Source Channel .](http://t.me/LAND_TEAM)
+Welcome to Source 
 
-[𓂅 . Files Channel .](http://t.me/LAND_dev)
+⌔┆ LaND TEAM
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+[⌔┆ 𝖲𝗈𝗎𝗋𝖼𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅](http://t.me/LAND_TEAM)
 
-[𓂅 .  Tumblr Channel  .](http://t.me/YYY6J)
+[⌔┆ 𝖲𝗈𝗎𝗋𝖼𝖾 𝖥𝗂𝗅𝖾𝗌](http://t.me/LAND_DEV)
 
-[𓂅 .  LAND ID .](http://t.me/ID_LandTEAM)
+[⌔┆ 𝖳𝖶𝖲 𝖫𝖠𝖭𝖣](http://t.me/TWLANDBOT)
+ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+[⌔┆ 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 𝖲𝗈𝗎𝗋𝖼𝖾](http://t.me/O777C)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
