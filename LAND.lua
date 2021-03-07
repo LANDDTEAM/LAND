@@ -865,7 +865,7 @@ local keyboard = {
 {'تفعيل البوت الخدمي ⌁','تعطيل البوت الخدمي ⌁'},
 {'تنظيف الكروبات ⌁','تنظيف المشتركين ⌁'},
 {'جلب نسخه الاحتياطيه ⌁'},
-{'تحديث السورس ⌁','الثانويين ⌁'},
+{'تحديث السورس ⌁','المطورين الثانويين ⌁'},
 {'VPS ⌁'},
 {'الغاء الامر ⌁'},
 }
@@ -1040,10 +1040,10 @@ end
 if text == 'تحديث السورس ⌁' and DevLANDW(msg) then 
 os.execute('rm -rf LAND.lua')
 os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua')
-send(msg.chat_id_, msg.id_,' ⌁︙تم تحديث السورس \n ⌁︙لديك اخر اصدار لسورس لاند\n ⌁︙ تابع تحديثات السورس @LAND_DEV')
+send(msg.chat_id_, msg.id_,' ⌁︙تم تحديث السورس \n ⌁︙لديك اخر اصدار لسورس لاند\n ⌁︙الاصدار » { 1.3v}')
 dofile('LAND.lua')  
 end
-if text == ("الثانويين ⌁") and SudoBot(msg) then
+if text == ("المطورين الثانويين ⌁") and SudoBot(msg) then
 local list = database:smembers(bot_id.."DEV:Sudo:T")
 t = "\n⌁︙قائمة مطورين الثانويين للبوت \n ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ \n"
 for k,v in pairs(list) do
@@ -2303,7 +2303,7 @@ return false
 end
 os.execute('rm -rf LAND.lua')
 os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua')
-send(msg.chat_id_, msg.id_,' ⌁︙تم تحديث السورس \n ⌁︙لديك اخر اصدار لسورس لاند\n ⌁︙ تابع تحديثات السورس @LAND_DEV')
+send(msg.chat_id_, msg.id_,' ⌁︙تم تحديث السورس \n ⌁︙لديك اخر اصدار لسورس لاند\n ⌁︙الاصدار » { 1.3v}')
 dofile('LAND.lua')  
 end
 
