@@ -4301,6 +4301,181 @@ t = " ⌁︙ لا يوجد منشئين اساسين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
+if text ==('رفع مدير عام') and SourceCh(msg) then
+function raf_reply(extra, result, success)
+DevAbs:sadd(DevProx..'Abs:ManagerAll:',result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"reply","⌁︙تم رفعه في قائمة المدراء العامين")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),raf_reply)
+end end
+if text and text:match('^رفع مدير عام @(.*)') and SourceCh(msg) then
+local username = text:match('^رفع مدير عام @(.*)')
+function promreply(extra,result,success)
+if result.id_ then
+DevAbs:sadd(DevProx..'Abs:ManagerAll:',result.id_)
+ReplyStatus(msg,result.id_,"reply","⌁︙تم رفعه في قائمة المدراء العامين")  
+else 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙*المعرف غير صحيح*', 1, 'md')
+end end 
+resolve_username(username,promreply)
+end
+if text and text:match('^رفع مدير عام (%d+)') and SourceCh(msg) then
+local user = text:match('رفع مدير عام (%d+)')
+DevAbs:sadd(DevProx..'Abs:ManagerAll:',user)
+ReplyStatus(msg,user,"reply","⌁︙تم رفعه في قائمة المدراء العامين")  
+end
+--     Source DevProx     --
+--      Rem ManagerAll    --
+if text ==('تنزيل مدير عام') and SourceCh(msg) then
+function prom_reply(extra, result, success)
+DevAbs:srem(DevProx..'Abs:ManagerAll:',result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"reply","⌁︙تم تنزيله من قائمة المدراء العامين")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
+end end
+if text and text:match('^تنزيل مدير عام @(.*)') and SourceCh(msg) then
+local username = text:match('^تنزيل مدير عام @(.*)')
+function promreply(extra,result,success)
+if result.id_ then
+DevAbs:srem(DevProx..'Abs:ManagerAll:',result.id_)
+ReplyStatus(msg,result.id_,"reply","⌁︙تم تنزيله من قائمة المدراء العامين")  
+else 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙*المعرف غير صحيح*', 1, 'md')
+end end 
+resolve_username(username,promreply)
+end
+if text and text:match('^تنزيل مدير عام (%d+)') and SourceCh(msg) then
+local user = text:match('تنزيل مدير عام (%d+)')
+DevAbs:srem(DevProx..'Abs:ManagerAll:',user)
+ReplyStatus(msg,user,"reply","⌁︙تم تنزيله من قائمة المدراء العامين")  
+end end
+--     Source DevProx     --
+--      Set adminall      --
+if ManagerAll(msg) then
+if text ==('رفع ادمن عام') and SourceCh(msg) then
+function raf_reply(extra, result, success)
+DevAbs:sadd(DevProx..'Abs:AdminAll:',result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"reply","⌁︙تم رفعه في قائمة الادمنيه العامين")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),raf_reply)
+end end
+if text and text:match('^رفع ادمن عام @(.*)') and SourceCh(msg) then
+local username = text:match('^رفع ادمن عام @(.*)')
+function promreply(extra,result,success)
+if result.id_ then
+DevAbs:sadd(DevProx..'Abs:AdminAll:',result.id_)
+ReplyStatus(msg,result.id_,"reply","⌁︙تم رفعه في قائمة الادمنيه العامين")  
+else 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙*المعرف غير صحيح*', 1, 'md')
+end end 
+resolve_username(username,promreply)
+end
+if text and text:match('^رفع ادمن عام (%d+)') and SourceCh(msg) then
+local user = text:match('رفع ادمن عام (%d+)')
+DevAbs:sadd(DevProx..'Abs:AdminAll:',user)
+ReplyStatus(msg,user,"reply","⌁︙تم رفعه في قائمة الادمنيه العامين")  
+end
+--     Source DevProx     --
+--      Rem adminall      --
+if text ==('تنزيل ادمن عام') and SourceCh(msg) then
+function prom_reply(extra, result, success)
+DevAbs:srem(DevProx..'Abs:AdminAll:',result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"reply","⌁︙تم تنزيله من قائمة الادمنيه العامين")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
+end end
+if text and text:match('^تنزيل ادمن عام @(.*)') and SourceCh(msg) then
+local username = text:match('^تنزيل ادمن عام @(.*)')
+function promreply(extra,result,success)
+if result.id_ then
+DevAbs:srem(DevProx..'Abs:AdminAll:',result.id_)
+ReplyStatus(msg,result.id_,"reply","⌁︙تم تنزيله من قائمة الادمنيه العامين")  
+else 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙*المعرف غير صحيح*', 1, 'md')
+end end 
+resolve_username(username,promreply)
+end
+if text and text:match('^تنزيل ادمن عام (%d+)') and SourceCh(msg) then
+local user = text:match('تنزيل ادمن عام (%d+)')
+DevAbs:srem(DevProx..'Abs:AdminAll:',user)
+ReplyStatus(msg,user,"reply","⌁︙تم تنزيله من قائمة الادمنيه العامين")  
+end end
+--     Source DevProx     --
+--       Set Vipall       --
+if AdminAll(msg) then
+if text ==('رفع مميز عام') and SourceCh(msg) then
+function raf_reply(extra, result, success)
+DevAbs:sadd(DevProx..'Abs:VipAll:',result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"reply","⌁︙تم رفعه في قائمة المميزين العام")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),raf_reply)
+end end
+if text and text:match('^رفع مميز عام @(.*)') and SourceCh(msg) then
+local username = text:match('^رفع مميز عام @(.*)')
+function promreply(extra,result,success)
+if result.id_ then
+DevAbs:sadd(DevProx..'Abs:VipAll:',result.id_)
+ReplyStatus(msg,result.id_,"reply","⌁︙تم رفعه في قائمة المميزين العام")  
+else 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙*المعرف غير صحيح*', 1, 'md')
+end end 
+resolve_username(username,promreply)
+end
+if text and text:match('^رفع مميز عام (%d+)') and SourceCh(msg) then
+local user = text:match('رفع مميز عام (%d+)')
+DevAbs:sadd(DevProx..'Abs:VipAll:',user)
+ReplyStatus(msg,user,"reply","⌁︙تم رفعه في قائمة المميزين العام")  
+end
+--     Source DevProx     --
+--       Rem Vipall       --
+if text ==('تنزيل مميز عام') and SourceCh(msg) then
+function prom_reply(extra, result, success)
+DevAbs:srem(DevProx..'Abs:VipAll:',result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"reply","⌁︙تم تنزيله من قائمة المميزين العام")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
+end end
+if text and text:match('^تنزيل مميز عام @(.*)') and SourceCh(msg) then
+local username = text:match('^تنزيل مميز عام @(.*)')
+function promreply(extra,result,success)
+if result.id_ then
+DevAbs:srem(DevProx..'Abs:VipAll:',result.id_)
+ReplyStatus(msg,result.id_,"reply","⌁︙تم تنزيله من قائمة المميزين العام")  
+else 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙*المعرف غير صحيح*', 1, 'md')
+end end 
+resolve_username(username,promreply)
+end
+if text and text:match('^تنزيل مميز عام (%d+)') and SourceCh(msg) then
+local user = text:match('تنزيل مميز عام (%d+)')
+DevAbs:srem(DevProx..'Abs:VipAll:',user)
+ReplyStatus(msg,user,"reply","⌁︙تم تنزيله من قائمة المميزين العام")  
+end end
+--     Source DevProx     --
+--  Set BasicConstructor  --
+if ChatType == 'sp' or ChatType == 'gp'  then
+if AbsConstructor(msg) then
+if text ==('رفع منشئ اساسي') and SourceCh(msg) then
+function raf_reply(extra, result, success)
+DevAbs:sadd(DevProx..'Abs:BasicConstructor:'..msg.chat_id_,result.sender_user_id_)
+ReplyStatus(msg,result.sender_user_id_,"reply","⌁︙تم رفعه منشئ اساسي")  
+end 
+if tonumber(tonumber(msg.reply_to_message_id_)) == 0 then
+else
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),raf_reply)
+end end
 
 if text == ("رفع منشئ اساسي") and msg.reply_to_message_id_ and CoSu(msg) then
 if AddChannel(msg.sender_user_id_) == false then
