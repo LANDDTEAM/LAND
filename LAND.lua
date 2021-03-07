@@ -865,9 +865,9 @@ local keyboard = {
 {'تفعيل البوت الخدمي ⌁','تعطيل البوت الخدمي ⌁'},
 {'تنظيف الكروبات ⌁','تنظيف المشتركين ⌁'},
 {'جلب نسخه الاحتياطيه ⌁'},
-{'تحديث السورس ⌁','المطورين الثانويين ⌁'},
-{'info Vps ⌁'},
-{'الغاء الامر ⌁'},
+{'تحديث السورس ⌁','الثانويين ⌁'},
+{'⌁ info Vps ⌁'},
+{'⌁ الغاء الامر ⌁'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 else
@@ -1002,7 +1002,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text and database:get(bot_id..'Start:Bots') then
-if text == 'الغاء' or text == 'الغاء ⌁' then   
+if text == 'الغاء الامر' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_,' ⌁︙ الغاء حفظ كليشه ستارت')
 database:del(bot_id..'Start:Bots') 
 return false
@@ -1021,7 +1021,7 @@ if text == 'حذف كليشه ستارت ⌁' and DevLANDW(msg) then
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,' ⌁︙ تم حذف كليشه ستارت')
 end
-if text == 'info Vps ⌁' and DevLANDW(msg) then 
+if text == '⌁ info Vps ⌁' and DevLANDW(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
 linux_version=`lsb_release -ds`
 memUsedPrc=`free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
@@ -1377,7 +1377,7 @@ end,nil)
 end
 end
 if database:get(bot_id..'Set:Name:Bot'..msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ⌁' then   
+if text == 'الغاء الامر' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء حفظ اسم البوت")
 database:del(bot_id..'Set:Name:Bot'..msg.sender_user_id_) 
 return false  
@@ -1388,7 +1388,7 @@ send(msg.chat_id_, msg.id_, " ⌁︙ تم حفظ الاسم")
 return false
 end 
 if database:get(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ⌁' then   
+if text == 'الغاء الامر' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه للخاص")
 database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1421,7 +1421,7 @@ database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 end
 
 if database:get(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ⌁' then   
+if text == 'الغاء الامر' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1454,7 +1454,7 @@ database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_i
 end
 
 if database:get(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ⌁' then   
+if text == 'الغاء الامر' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -1474,7 +1474,7 @@ database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_
 end 
 end
 if database:get(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ⌁' then   
+if text == 'الغاء الامر' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
