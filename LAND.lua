@@ -851,6 +851,7 @@ end
 if DevLANDW(msg) then
 local bl = ' ⌔┆ اهلا عزيزي آلمـطـور\n ⌔┆ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ⌔┆ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ⌔┆ من خلاال الكيبورت خاص بك\n ⌔┆ قناة سورس البوت [اضغط هنا](t.me/LAND_TEAM)'
 local keyboard = {
+{'تحديث الملفات ⌔','المطورين الثانويين ⌔'},
 {'الاحصائيات ⌔','قناه تحديثات البوت ⌔'},
 {'تعطيل التواصل ⌔','تفعيل التواصل ⌔'},
 {'ضع اسم للبوت ⌔','المطورين ⌔','قائمه العام ⌔'},
@@ -1011,6 +1012,20 @@ database:set(bot_id.."Start:Bot",text)
 send(msg.chat_id_, msg.id_,' ⌔┆ تم حفظ كليشه ستارت')
 database:del(bot_id..'Start:Bots') 
 return false
+end
+if text == ("المطورين الثانويين ⌔") and SudoBot(msg) then
+local list = database:smembers(bot_id.."DEV:Sudo:T")
+t = "\n⌔┆ قائمة مطورين الثانويين للبوت \n ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ \n"
+for k,v in pairs(list) do
+local username = database:get(bot_id.."user:Name" .. v)
+if username then
+t = t..""..k.."- ([@"..username.."])\n"
+else
+t = t..""..k.."- (`"..v.."`)\n"
+end
+end
+if #list == 0 then
+t = "⌔┆ لا يوجد مطورين ثانويين"
 end
 if text == 'ضع كليشه ستارت ⌔' and DevLANDW(msg) then 
 database:set(bot_id..'Start:Bots',true) 
@@ -1446,6 +1461,10 @@ if text == 'الغاء' or text == 'الغاء ⌔' then
 send(msg.chat_id_, msg.id_," ⌔┆ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
+end 
+if text == 'تحديث الملفات ⌔' and DevLANDW(msg) then    
+dofile('LAND.lua')  
+send(msg.chat_id_, msg.id_, ' ⌔┆ تم تحديث جميع الملفات') 
 end 
 if msg.forward_info_ then 
 local list = database:smembers(bot_id..'Chek:Groups')   
