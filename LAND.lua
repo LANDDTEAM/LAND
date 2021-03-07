@@ -865,7 +865,7 @@ local keyboard = {
 {'تفعيل البوت الخدمي ⌔','تعطيل البوت الخدمي ⌔'},
 {'تنظيف الكروبات ⌔','تنظيف المشتركين ⌔'},
 {'جلب نسخه الاحتياطيه ⌔'},
-{'تحديث السورس ⌔','تغيير المطور الاساسي ⌔'},
+{'تحديث السورس ⌔','تغير المطور ⌔'},
 {'معلومات السيرفر ⌔'},
 {'الغاء ⌔'},
 }
@@ -1043,11 +1043,11 @@ os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua'
 send(msg.chat_id_, msg.id_,' ⌔┆ تم تحديث السورس \n ⌔┆ لديك اخر اصدار لسورس لاند\n ⌔┆ الاصدار » { 1.3v}')
 dofile('LAND.lua')  
 end
-if text =='تغيير المطور الاساسي ⌔' and VIP_DeV(msg) then
+if text =='تغير المطور ⌔' and VIP_DeV(msg) then
 send(msg.chat_id_, msg.id_,'⌔︙ارسل ايدي المطور الاساسي الجديد')
 database:set(bot_id..'LACKBOTSS:Ed:DevBots',true) 
 end
-if text =='تغيير المطور الاساسي ⌔' and not VIP_DeV(msg) then
+if text =='تغير المطور ⌔' and not VIP_DeV(msg) then
 send(msg.chat_id_, msg.id_,'⌔︙تسرسح')
 end
 if database:get(bot_id.."LACKBOTSS:Ed:DevBots") then
