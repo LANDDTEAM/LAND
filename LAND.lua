@@ -1053,12 +1053,12 @@ end
 if database:get(bot_id.."LACKBOTSS:Ed:DevBots") then
 if text and text:match("^(%d+)$") then
 local IdDe = text:match("^(%d+)$")
-send(msg.chat_id_,msg.id_, "⌔︙تم حفظ المعلومات ارسل ( تحديث ) للتنفيذ")
+send(msg.chat_id_,msg.id_, "⌔︙تم تحفظ المعلومات اضغط ( تحديث الملفات ⌔ ) للتنفيذ")
 local A = io.open("sudo.lua", 'w')
 A:write([[
-s = "LAND_TEAM"
+s = "BGBBB"
 
-q = "LAND_DEV"
+q = "FBBBBB"
 
 token = "]]..token..[["
 
