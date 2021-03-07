@@ -1043,7 +1043,7 @@ os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua'
 send(msg.chat_id_, msg.id_,' ⌁︙ تم تحديث السورس \n ⌁︙ لديك اخر اصدار لسورس لاند\n ⌁︙ الاصدار » { 1.3v}')
 dofile('LAND.lua')  
 end
-if text == ("الثانويين") and SudoBot(msg) then
+if text == ("الثانويين ⌁") and SudoBot(msg) then
 local list = database:smembers(bot_id.."DEV:Sudo:T")
 t = "\n⌁︙ قائمة مطورين الثانويين للبوت \n ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ \n"
 for k,v in pairs(list) do
@@ -11149,7 +11149,7 @@ name = string.gsub(name,'سمكه','🐟')
 name = string.gsub(name,'خفاش','🦇')
 name = string.gsub(name,'اسد','🦁')
 name = string.gsub(name,'فأر','🐭')
-name = string.gsub(name,'ذئب','🐺')
+name = string.gsub(name,'ذئب','??')
 name = string.gsub(name,'فراشه','🦋')
 name = string.gsub(name,'عقرب','🦂')
 name = string.gsub(name,'زرافه','🦒')
