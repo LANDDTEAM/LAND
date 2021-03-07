@@ -865,7 +865,7 @@ local keyboard = {
 {'تفعيل البوت الخدمي ⌔','تعطيل البوت الخدمي ⌔'},
 {'تنظيف الكروبات ⌔','تنظيف المشتركين ⌔'},
 {'جلب نسخه الاحتياطيه ⌔'},
-{'تحديث السورس ⌔','الاصدار ⌔'},
+{'تحديث السورس ⌔','تغيير المطور الاساسي ⌔'},
 {'معلومات السيرفر ⌔'},
 {'الغاء ⌔'},
 }
@@ -1043,9 +1043,30 @@ os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua'
 send(msg.chat_id_, msg.id_,' ⌔┆ تم تحديث السورس \n ⌔┆ لديك اخر اصدار لسورس لاند\n ⌔┆ الاصدار » { 1.3v}')
 dofile('LAND.lua')  
 end
-if text == 'الاصدار ⌔' and DevLANDW(msg) then 
-database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ⌔┆ اصدار سورس لاند \n ⌔┆ الاصدار »{ 1.3v}')
+if text =='تغيير المطور الاساسي ⌔' and VIP_DeV(msg) then
+send(msg.chat_id_, msg.id_,'⌔︙ارسل ايدي المطور الاساسي الجديد')
+database:set(bot_id..'LACKBOTSS:Ed:DevBots',true) 
+end
+if text =='تغيير المطور الاساسي ⌔' and not VIP_DeV(msg) then
+send(msg.chat_id_, msg.id_,'⌔︙تسرسح')
+end
+if database:get(bot_id.."LACKBOTSS:Ed:DevBots") then
+if text and text:match("^(%d+)$") then
+local IdDe = text:match("^(%d+)$")
+send(msg.chat_id_,msg.id_, "⌔︙تم حفظ المعلومات ارسل ( تحديث ) للتنفيذ")
+local A = io.open("sudo.lua", 'w')
+A:write([[
+s = "LAND_TEAM"
+
+q = "LAND_DEV"
+
+token = "]]..token..[["
+
+Sudo = ]]..IdDe..[[  
+]])
+A:close()
+database:del(bot_id.."LACKBOTSS:Ed:DevBots")
+end
 end
 if text == 'قناه تحديثات البوت ⌔' and DevLANDW(msg) then 
 database:del(bot_id..'Srt:Bot') 
