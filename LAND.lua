@@ -137,7 +137,7 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
-> CH › @xnxxTxn
+> CH › @LAND_TEAM
 > CH › @LAND_TEAM
 ~> DEVELOPER › @O777C
 ]])
@@ -849,7 +849,7 @@ end
 return false
 end
 if DevLANDW(msg) then
-local bl = ' ⌁︙ اهلا عزيزي آلمـطـور\n ⌁︙ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ⌁︙ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ⌁︙ من خلاال الكيبورت خاص بك\n ⌁︙ قناة سورس البوت [اضغط هنا](t.me/xnxxTxn)'
+local bl = ' ⌁︙ اهلا عزيزي آلمـطـور\n ⌁︙ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ⌁︙ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ⌁︙ من خلاال الكيبورت خاص بك\n ⌁︙ قناة سورس البوت [اضغط هنا](t.me/LAND_TEAM)'
 local keyboard = {
 {'الاحصائيات ⌁','معلومات السورس ⌁'},
 {'تعطيل التواصل ⌁','تفعيل التواصل ⌁'},
@@ -876,7 +876,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 SourceLANDr = start
 else
-SourceLANDr = '⌁︙ اهلا عزيزي\n ⌁︙ انا بوت اسمي '..Namebot..'\n ⌁︙ اختصاصي حمايه الكروبات\n ⌁︙ من تكرار والسبام والتوجيه والخ…\n ⌁︙ لتفعيلي اتبع الاخطوات…↓\n ⌁︙ اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[ ⌁︙ قناة سورس البوت](http://t.me/xnxxTxn)'
+SourceLANDr = '⌁︙ اهلا عزيزي\n ⌁︙ انا بوت اسمي '..Namebot..'\n ⌁︙ اختصاصي حمايه الكروبات\n ⌁︙ من تكرار والسبام والتوجيه والخ…\n ⌁︙ لتفعيلي اتبع الاخطوات…↓\n ⌁︙ اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[ ⌁︙ قناة سورس البوت](http://t.me/LAND_TEAM)'
 end 
 send(msg.chat_id_, msg.id_, SourceLANDr) 
 end
@@ -1061,7 +1061,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == 'معلومات السورس ⌁' and DevLANDW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ⌁︙ [تحديثات البوت](t.me/LAND_TEAM) \n ⌁︙ [قناه السورس](t.me/xnxxTxn)')
+send(msg.chat_id_, msg.id_,' ⌁︙ [تحديثات البوت](t.me/LAND_TEAM) \n ⌁︙ [قناه السورس](t.me/LAND_TEAM)')
 end
 if text == "ضع اسم للبوت ⌁" and DevLANDW(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -2589,7 +2589,7 @@ Welcome to Source
 
 ⌁︙ LaND TEAM
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-[⌁︙ 𝖲𝗈𝗎𝗋𝖼𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅](http://t.me/xnxxTxn)
+[⌁︙ 𝖲𝗈𝗎𝗋𝖼𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅](http://t.me/LAND_TEAM)
 
 [⌁︙ 𝖲𝗈𝗎𝗋𝖼𝖾 𝖥𝗂𝗅𝖾𝗌](http://t.me/LAND_TEAM)
 
@@ -7641,7 +7641,7 @@ local text =
 ' }\n'..' ⌁︙  الايدي » { '..idgp..
 ' }\n'..' ⌁︙  الايدي بالصوره » { '..idph..
 ' }\n'..' ⌁︙  الرفع » { '..setadd..
-' }\n'..' ⌁︙  الحظر » { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n ⌁︙  CH » @xnxxTxn\n'
+' }\n'..' ⌁︙  الحظر » { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n ⌁︙  CH » @LAND_TEAM\n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -10426,7 +10426,7 @@ Text = [[
 ⌁︙ م9 ◂ اوامر مطور الاساسي 
 ⌁︙ م10 ◂ اوامر الاعضاء
 ٴ━  ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10481,7 +10481,7 @@ Text = [[
 ⌁︙ الجهات
 ⌁︙ الاشعارات
 ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10540,7 +10540,7 @@ Text = [[
 ⌁︙ نسبه الحب
 ⌁︙ ءall
 ٴ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10578,7 +10578,7 @@ Text = [[
 ⌁︙ وصف
 ⌁︙ تكرار + عدد
 ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10627,7 +10627,7 @@ Text = [[
 ⌁︙ امر 
 ⌁︙ الاوامر المضافه
 ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10678,7 +10678,7 @@ Text = [[
 ⌁︙ تغير امر الاوامر
 ⌁︙ تغير امر م1 ~ الئ م10
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10747,7 +10747,7 @@ Text = [[
 ⌁︙ نسبه الكره
 ⌁︙ نسبه الانوثه
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10806,7 +10806,7 @@ Text = [[
 ⌁︙ رفع + تنزيل ← الحاته
 ⌁︙ تاك للحاتات
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10840,7 +10840,7 @@ Text = [[
 ⌁︙ اذاعه 
 ⌁︙ ردود المطور 
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10921,7 +10921,7 @@ Text = [[
 ⌁︙ تنظيف المشتركين
 ⌁︙ تنظيف الكروبات
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10955,7 +10955,7 @@ Text = [[
 ⌁︙ شنو رئيك بهاي بالرد
 ⌁︙ تحب هذا
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/xnxxTxn)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐋𝐀𝐍𝐃 🦄ٔ ](http://t.me/LAND_TEAM)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
