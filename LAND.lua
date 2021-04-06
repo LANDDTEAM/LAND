@@ -137,7 +137,7 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
-> CH › @xnxxTxn
+> CH › @LAND_TEAM
 > CH › @LAND_TEAM
 ~> DEVELOPER › @O777C
 ]])
@@ -276,13 +276,13 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1124341247) then  
-var = 'مطور السورس 🍇. '
+var = 'مطور آلسـورس'
 elseif tonumber(user_id) == tonumber(1124341247) then
-var = 'مبرمج السورس ᴗ͈̑‸ᴗ͈̑'
+var = 'مبرمج آلسـورس¹'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then 
-var = "المطور الاساسي²"  
+var = "مطور ثانوي"  
 elseif tonumber(user_id) == tonumber(bot_id) then  
 var = 'البوت'
 elseif database:sismember(bot_id..'Sudo:User', user_id) then
@@ -800,7 +800,7 @@ Chat_Type = 'GroupBot'
 end
 end
 if database:get(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "الغاء" or text == "⌁ الغاء ⌁" then   
+if text == "الغاء" or text == "الغاء ⌁" then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه")
 database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -851,7 +851,7 @@ end
 if DevLANDW(msg) then
 local bl = ' ⌁︙ اهلا عزيزي آلمـطـور\n ⌁︙ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ⌁︙ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ⌁︙ من خلاال الكيبورت خاص بك\n ⌁︙ قناة سورس البوت [اضغط هنا](t.me/xnxxTxn)'
 local keyboard = {
-{'الاحصائيات ⌁','معلومات السورس ⌁'},
+{'الاحصائيات ⌁','قناه تحديثات البوت ⌁'},
 {'تعطيل التواصل ⌁','تفعيل التواصل ⌁'},
 {'ضع اسم للبوت ⌁','المطورين ⌁','قائمه العام ⌁'},
 {'المشتركين ⌁','الكروبات ⌁'},
@@ -865,9 +865,9 @@ local keyboard = {
 {'تفعيل البوت الخدمي ⌁','تعطيل البوت الخدمي ⌁'},
 {'تنظيف الكروبات ⌁','تنظيف المشتركين ⌁'},
 {'جلب نسخه الاحتياطيه ⌁'},
-{'تحديث السورس ⌁','الثانويين ⌁'},
-{'⌁ info Vps ⌁'},
-{'⌁ الغاء ⌁'},
+{'تحديث السورس ⌁','الاصدار ⌁'},
+{'معلومات السيرفر ⌁'},
+{'الغاء ⌁'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 else
@@ -876,7 +876,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 SourceLANDr = start
 else
-SourceLANDr = '⌁︙ اهلا عزيزي\n ⌁︙ انا بوت اسمي '..Namebot..'\n ⌁︙ اختصاصي حمايه الكروبات\n ⌁︙ من تكرار والسبام والتوجيه والخ…\n ⌁︙ لتفعيلي اتبع الاخطوات…↓\n ⌁︙ اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[ ⌁︙ قناة سورس البوت](http://t.me/xnxxTxn)'
+SourceLANDr = '⌁︙ اهلا عزيزي\n ⌁︙ انا بوت اسمي '..Namebot..'\n ⌁︙ اختصاصي حمايه الكروبات\n ⌁︙ من تكرار والسبام والتوجيه والخ…\n ⌁︙ لتفعيلي اتبع الاخطوات…↓\n ⌁︙ اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[ ⌁︙ [قناة سورس البوت](http://t.me/xnxxTxn)'
 end 
 send(msg.chat_id_, msg.id_, SourceLANDr) 
 end
@@ -1002,7 +1002,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text and database:get(bot_id..'Start:Bots') then
-if text == 'الغاء الامر' or text == '⌁ الغاء ⌁' then   
+if text == 'الغاء' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_,' ⌁︙ الغاء حفظ كليشه ستارت')
 database:del(bot_id..'Start:Bots') 
 return false
@@ -1021,7 +1021,7 @@ if text == 'حذف كليشه ستارت ⌁' and DevLANDW(msg) then
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,' ⌁︙ تم حذف كليشه ستارت')
 end
-if text == '⌁ info Vps ⌁' and DevLANDW(msg) then 
+if text == 'معلومات السيرفر ⌁' and DevLANDW(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
 linux_version=`lsb_release -ds`
 memUsedPrc=`free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
@@ -1043,23 +1043,11 @@ os.execute('wget https://raw.githubusercontent.com/LANDDTEAM/LAND/main/LAND.lua'
 send(msg.chat_id_, msg.id_,' ⌁︙ تم تحديث السورس \n ⌁︙ لديك اخر اصدار لسورس لاند\n ⌁︙ الاصدار » { 1.3v}')
 dofile('LAND.lua')  
 end
-if text == ("الثانويين ⌁") and SudoBot(msg) then
-local list = database:smembers(bot_id.."DEV:Sudo:T")
-t = "\n⌁︙ قائمة مطورين الثانويين للبوت \n ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."user:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
+if text == 'الاصدار ⌁' and DevLANDW(msg) then 
+database:del(bot_id..'Srt:Bot') 
+send(msg.chat_id_, msg.id_,' ⌁︙ اصدار سورس لاند \n ⌁︙ الاصدار »{ 1.3v}')
 end
-end
-if #list == 0 then
-t = "⌁︙ لا يوجد مطورين ثانويين"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == 'معلومات السورس ⌁' and DevLANDW(msg) then 
+if text == 'قناه تحديثات البوت ⌁' and DevLANDW(msg) then 
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ⌁︙ [تحديثات البوت](t.me/LAND_TEAM) \n ⌁︙ [قناه السورس](t.me/xnxxTxn)')
 end
@@ -1377,7 +1365,7 @@ end,nil)
 end
 end
 if database:get(bot_id..'Set:Name:Bot'..msg.sender_user_id_) then 
-if text == 'الغاء' or text == '⌁ الغاء ⌁' then   
+if text == 'الغاء' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء حفظ اسم البوت")
 database:del(bot_id..'Set:Name:Bot'..msg.sender_user_id_) 
 return false  
@@ -1388,7 +1376,7 @@ send(msg.chat_id_, msg.id_, " ⌁︙ تم حفظ الاسم")
 return false
 end 
 if database:get(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == '⌁ الغاء ⌁' then   
+if text == 'الغاء' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه للخاص")
 database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1421,7 +1409,7 @@ database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 end
 
 if database:get(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == '⌁ الغاء ⌁' then   
+if text == 'الغاء' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1454,7 +1442,7 @@ database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_i
 end
 
 if database:get(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == '⌁ الغاء ⌁' then   
+if text == 'الغاء' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -1474,7 +1462,7 @@ database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_
 end 
 end
 if database:get(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء الامر' or text == '⌁ الغاء ⌁' then   
+if text == 'الغاء' or text == 'الغاء ⌁' then   
 send(msg.chat_id_, msg.id_," ⌁︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -2585,15 +2573,15 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 Text = [[
-𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆 🍇.
+𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆
 
-[╭• 𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇. •╮](http://t.me/XNXXTXN)
+[╭• 𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝐂𝑬 •╮](http://t.me/XNXXTXN)
 
-[╭• 𝑺𝑶𝑼𝑹𝑪𝑬 𝑭𝑰𝑳𝑬𝑺 🍇.  •╮](http://t.me/Land_team)
+[╭• 𝑺𝑶𝑼𝑹𝑪𝑬 𝑭𝑰𝑳𝑬𝑺  •╮](http://t.me/Land_team)
 
-[╭• 𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑻𝑬𝑴𝑷𝑳𝑬𝑹  🍇. •╮](http://t.me/ASTANBULTV)
+[╭• 𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑻𝑬𝑴𝑷𝑳𝑬𝑹  •╮](http://t.me/ASTANBULTV)
 
-[╭• 𝑺𝑶𝑼𝑹𝑪𝑬 𝑫𝑬𝑽  🍇. •╮](http://t.me/O777C)
+[╭• 𝑺𝑶𝑼𝑹𝑪𝑬 𝑫𝑬𝑽  •╮](http://t.me/O777C)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -4299,7 +4287,6 @@ t = " ⌁︙ لا يوجد منشئين اساسين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-
 
 if text == ("رفع منشئ اساسي") and msg.reply_to_message_id_ and CoSu(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -7639,7 +7626,7 @@ local text =
 ' }\n'..' ⌁︙  الايدي » { '..idgp..
 ' }\n'..' ⌁︙  الايدي بالصوره » { '..idph..
 ' }\n'..' ⌁︙  الرفع » { '..setadd..
-' }\n'..' ⌁︙  الحظر » { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n ⌁︙  CH » @LAND_TEAM\n'
+' }\n'..' ⌁︙  الحظر » { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n ⌁︙  CH » @xnxxTxn\n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -10424,7 +10411,7 @@ Text = [[
 ⌁︙ م9 ◂ اوامر مطور الاساسي 
 ⌁︙ م10 ◂ اوامر الاعضاء
 ٴ━  ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10479,7 +10466,7 @@ Text = [[
 ⌁︙ الجهات
 ⌁︙ الاشعارات
 ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10538,7 +10525,7 @@ Text = [[
 ⌁︙ نسبه الحب
 ⌁︙ ءall
 ٴ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10576,7 +10563,7 @@ Text = [[
 ⌁︙ وصف
 ⌁︙ تكرار + عدد
 ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10625,7 +10612,7 @@ Text = [[
 ⌁︙ امر 
 ⌁︙ الاوامر المضافه
 ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10676,7 +10663,7 @@ Text = [[
 ⌁︙ تغير امر الاوامر
 ⌁︙ تغير امر م1 ~ الئ م10
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10745,7 +10732,7 @@ Text = [[
 ⌁︙ نسبه الكره
 ⌁︙ نسبه الانوثه
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10804,7 +10791,7 @@ Text = [[
 ⌁︙ رفع + تنزيل ← الحاته
 ⌁︙ تاك للحاتات
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10838,7 +10825,7 @@ Text = [[
 ⌁︙ اذاعه 
 ⌁︙ ردود المطور 
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10919,7 +10906,7 @@ Text = [[
 ⌁︙ تنظيف المشتركين
 ⌁︙ تنظيف الكروبات
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10953,7 +10940,7 @@ Text = [[
 ⌁︙ شنو رئيك بهاي بالرد
 ⌁︙ تحب هذا
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -11147,7 +11134,7 @@ name = string.gsub(name,'سمكه','🐟')
 name = string.gsub(name,'خفاش','🦇')
 name = string.gsub(name,'اسد','🦁')
 name = string.gsub(name,'فأر','🐭')
-name = string.gsub(name,'ذئب','??')
+name = string.gsub(name,'ذئب','🐺')
 name = string.gsub(name,'فراشه','🦋')
 name = string.gsub(name,'عقرب','🦂')
 name = string.gsub(name,'زرافه','🦒')
@@ -11541,7 +11528,7 @@ Text_Games = [[
  ⌁︙ لعبه الحزوره ~⪼لعبة التفكير 
  ⌁︙ لعبه المعاني ~⪼ العبه الشهيره 
  ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━
-[  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+[𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn)
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
 end
@@ -11767,7 +11754,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ⌁︙ٴ ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ٴ⌁︙○ٴ\n⌁︙ [  𝑳𝑨𝑵𝑫 𝑺𝑶𝑼𝑹𝑪𝑬 🍇.](http://t.me/xnxxtxn)
+send(msg.chat_id_, msg.id_, t..'ٴ⌁︙ٴ ٴ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ٴ⌁︙○ٴ\n⌁︙ [𝑪𝑯𝑨𝑵𝑵𝑬𝑳 𝑳𝑨𝑵𝑫](http://t.me/xnxxtxn) ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '⌁︙ تم تعطيل الابراج')
